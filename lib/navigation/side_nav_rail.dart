@@ -16,6 +16,7 @@ class SideNavRail extends StatelessWidget {
     return NavigationRail(
       selectedIndex: selectedIndex,
       onDestinationSelected: onItemSelected,
+      labelType: NavigationRailLabelType.all,
       destinations: navigationItems
           .map((e) => NavigationRailDestination(
                 icon: Icon(e.icon),
