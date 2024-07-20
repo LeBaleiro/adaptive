@@ -11,7 +11,6 @@ class CardImage extends StatelessWidget {
       child: Image.network(
         url,
         height: 150,
-        width: double.infinity,
         fit: BoxFit.cover,
       ),
     );

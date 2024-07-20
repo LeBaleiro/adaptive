@@ -6,9 +6,12 @@ class Description extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      description,
-      style: Theme.of(context).textTheme.bodyLarge,
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Text(
+        description,
+        style: Theme.of(context).textTheme.bodyLarge,
+      ),
     );
   }
 }
