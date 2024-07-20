@@ -1,7 +1,5 @@
-import 'package:adaptive/custom_card/caption.dart';
+import 'package:adaptive/custom_card/card_content.dart';
 import 'package:adaptive/custom_card/card_image.dart';
-import 'package:adaptive/custom_card/description.dart';
-import 'package:adaptive/custom_card/tag_footer.dart';
 import 'package:flutter/material.dart';
 
 class CustomCard extends StatelessWidget {
@@ -33,39 +31,31 @@ class CustomCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                CardImage(url: imageUrl),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Caption(caption),
-                      Description(description),
-                      TagFooter(tagLabel: tagLabel),
-                    ],
-                  ),
+                SizedBox(
+                  width: double.infinity,
+                  child: CardImage(url: imageUrl),
+                ),
+                CardContent(
+                  caption: caption,
+                  description: description,
+                  tagLabel: tagLabel,
                 ),
               ],
             );
           } else {
-            return Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                CardImage(url: imageUrl),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: <Widget>[
-                      Caption(caption),
-                      Description(description),
-                      TagFooter(tagLabel: tagLabel),
-                    ],
+            return IntrinsicHeight(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  CardImage(url: imageUrl),
+                  CardContent(
+                    caption: caption,
+                    description: description,
+                    tagLabel: tagLabel,
                   ),
-                )
-              ],
+                ],
+              ),
             );
           }
         },

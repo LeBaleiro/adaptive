@@ -1,5 +1,6 @@
 import 'package:adaptive/custom_card/custom_card.dart';
 import 'package:adaptive/image_list/custom_image.dart';
+import 'package:adaptive/new_page.dart';
 import 'package:flutter/material.dart';
 
 class GridIpsum extends StatelessWidget {
@@ -22,22 +23,12 @@ class GridIpsum extends StatelessWidget {
               child: CustomImage(
                 url: 'https://picsum.photos/id/${index + 1}/500/500',
               ),
-              onTap: () {
-                showDialog(
-                  context: context,
-                  builder: (context) {
-                    return const Dialog(
-                        child: CustomCard(
-                      imageUrl:
-                          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrkp-qvrUZpXsxTEAGhN_3yOLWyQ7zFGpT0w&s',
-                      caption: 'EASTERN TIMES',
-                      description:
-                          'The Most Complicated Recipe You\'ll Still Want To Make',
-                      tagLabel: 'Top News · 1 hour ago',
-                    ));
-                  },
-                );
-              },
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const NewPage(),
+                ),
+              ),
             );
           },
         ),
