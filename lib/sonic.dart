@@ -1,4 +1,4 @@
-import 'package:adaptive/custom_image.dart';
+import 'package:adaptive/image_list/custom_image.dart';
 import 'package:flutter/material.dart';
 
 class ListaDoSonic extends StatelessWidget {

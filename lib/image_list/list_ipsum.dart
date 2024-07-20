@@ -1,8 +1,8 @@
-import 'package:adaptive/custom_image.dart';
+import 'package:adaptive/image_list/custom_image.dart';
 import 'package:flutter/material.dart';
 
-class MinhaListaIpsum extends StatelessWidget {
-  const MinhaListaIpsum({super.key});
+class ListaIpsum extends StatelessWidget {
+  const ListaIpsum({super.key});
 
   @override
   Widget build(BuildContext context) {

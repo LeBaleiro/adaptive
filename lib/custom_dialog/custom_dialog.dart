@@ -3,27 +3,6 @@ import 'package:adaptive/custom_dialog/full_screen_dialog_title.dart';
 import 'package:adaptive/custom_dialog/simple_dialog_title.dart';
 import 'package:flutter/material.dart';
 
-// Future<void> showCustomDialog(BuildContext context) async {
-//   return showDialog(
-//     context: context,
-//     builder: (context) {
-//       final showFullScreenDialog = MediaQuery.sizeOf(context).width < 600;
-//       if (showFullScreenDialog) {
-//         return const Dialog.fullscreen(
-//           child: DialogContent(),
-//         );
-//       } else {
-//         return Dialog(
-//           child: ConstrainedBox(
-//             constraints: const BoxConstraints(maxWidth: 400),
-//             child: const DialogContent(),
-//           ),
-//         );
-//       }
-//     },
-//   );
-// }
-
 Future<void> showCustomDialog(BuildContext context) async {
   showDialog(
     context: context,
