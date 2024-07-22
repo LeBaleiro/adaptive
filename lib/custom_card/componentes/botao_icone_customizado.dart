@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CustomIconButton extends StatelessWidget {
-  const CustomIconButton(
+class BotaoIconeCustomizado extends StatelessWidget {
+  const BotaoIconeCustomizado(
       {super.key, required this.iconData, required this.onTap});
   final IconData iconData;
   final VoidCallback onTap;

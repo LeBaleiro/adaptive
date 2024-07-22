@@ -1,4 +1,3 @@
-import 'package:adaptive/custom_card/custom_card.dart';
 import 'package:adaptive/image_list/custom_image.dart';
 import 'package:adaptive/new_page.dart';
 import 'package:flutter/material.dart';

@@ -5,6 +5,28 @@ import 'package:adaptive/navigation/bottom_nav_bar.dart';
 import 'package:adaptive/navigation/side_nav_rail.dart';
 import 'package:flutter/material.dart';
 
+// class HomePage extends StatefulWidget {
+//   ...
+
+//   @override
+//   Widget build(BuildContext context) {
+//     final useSideNavRail = MediaQuery.sizeOf(context).width >= 600;
+//     return Scaffold(
+//       appBar: AppBar(...),
+//       bottomNavigationBar: useSideNavRail
+//           ? null
+//           : BottomNavBar(...),
+//       floatingActionButton: FloatingActionButton(...),
+//       body: Row(
+//         children: [
+//           if (useSideNavRail) SideNavRail(...),
+//           const Expanded(child: GridIpsum()),
+//         ],
+//       ),
+//     );
+//   }
+// }
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 

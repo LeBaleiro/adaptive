@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CardImage extends StatelessWidget {
-  const CardImage({super.key, required this.url});
+class ImagemCard extends StatelessWidget {
+  const ImagemCard({super.key, required this.url});
 
   final String url;
   @override
@@ -10,7 +10,6 @@ class CardImage extends StatelessWidget {
       borderRadius: const BorderRadius.all(Radius.circular(16.0)),
       child: Image.network(
         url,
-        height: 150,
         fit: BoxFit.cover,
       ),
     );

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Caption extends StatelessWidget {
-  const Caption(this.caption, {super.key});
+class Titulo extends StatelessWidget {
+  const Titulo(this.caption, {super.key});
   final String caption;
 
-  List<String> get captionSplitted => caption.split(' ');
+  List<String> get textoDividido => caption.split(' ');
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +16,9 @@ class Caption extends StatelessWidget {
               .textTheme
               .titleLarge
               ?.copyWith(fontWeight: FontWeight.bold),
-          children: captionSplitted.map(
+          children: textoDividido.map(
             (e) {
-              final index = captionSplitted.indexOf(e);
+              final index = textoDividido.indexOf(e);
               return TextSpan(
                 text: '$e ',
                 style: TextStyle(

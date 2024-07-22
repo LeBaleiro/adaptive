@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Description extends StatelessWidget {
-  const Description(this.description, {super.key});
+class Descricao extends StatelessWidget {
+  const Descricao(this.description, {super.key});
   final String description;
 
   @override
