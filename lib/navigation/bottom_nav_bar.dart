@@ -1,4 +1,4 @@
-import 'package:adaptive/navigation/navitation_items.dart';
+import 'package:adaptive/navigation/navigation_items.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavBar extends StatelessWidget {
